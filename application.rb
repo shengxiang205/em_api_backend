@@ -54,8 +54,7 @@ class QueryApplication < Sinatra::Base
   end 
 
   get '/api/v1/query.*' do
-    logger.info "开始访问: #{Time.now.to_f}"
-    logger.info params.inspect
+    # logger.info "开始访问: #{Time.now.to_f}"
     data_lake_stub_name = params[:data_lake_stub]
     command_name        = params[:command]
     args                = params[:args] ||= []
@@ -65,12 +64,12 @@ class QueryApplication < Sinatra::Base
     end
 
 
-    logger.info "Lake的名称: #{data_lake_stub_name}"
-    logger.info "查询方法: #{command_name}"
-    logger.info "参数: #{args.inspect}"
+    # logger.info "Lake的名称: #{data_lake_stub_name}"
+    # logger.info "查询方法: #{command_name}"
+    # logger.info "参数: #{args.inspect}"
 
     start_time = Time.now.tap do |t|
-      logger.info "参数解压完毕: #{t.to_f}"
+      # logger.info "参数解压完毕: #{t.to_f}"
     end
 
     ids = [
