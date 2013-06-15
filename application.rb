@@ -19,6 +19,8 @@ else
 end
 
 Cache = Dalli::Client.new(['192.168.10.249:11211'], threadsafe: true, failover: true, namespace: 'data_ocean')
+Sinatra::Synchrony.overload_tcpsocket!
+
 Connection = Mongo::MongoReplicaSetClient.new(
   [
     '192.168.10.248:40000',
