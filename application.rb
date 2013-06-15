@@ -55,6 +55,7 @@ class QueryApplication < Sinatra::Base
 
   get '/api/v1/query.*' do
     logger.info "开始访问: #{Time.now.to_f}"
+    logger.info params.inspect
     data_lake_stub_name = params[:data_lake_stub]
     command_name        = params[:command]
     args                = params[:args] ||= []
