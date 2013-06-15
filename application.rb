@@ -33,9 +33,8 @@ class QueryApplication < Sinatra::Base
     def self.unpack_raw_args(raw_args)
       zipped_content = Base64.decode64(raw_args)
       zipped_io = StringIO.new(zipped_content)
-      JSON.parse(Zlib::GzipReader.new(zipped_io).read).symbolize_keys[:args]
+      JSON.parse(Zlib::GzipReader.new(zipped_io).read, :symbolize_names => true)[:args]
     rescue => e
-      raise e
       []
     end
   end
