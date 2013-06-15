@@ -1,0 +1,6 @@
+log: log/thin.log
+max_conns: 1024
+environment: production
+servers: 6
+socket: /tmp/api_thin.socket
+tag: api
