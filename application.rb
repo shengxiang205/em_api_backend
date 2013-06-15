@@ -35,6 +35,7 @@ class QueryApplication < Sinatra::Base
       zipped_io = StringIO.new(zipped_content)
       JSON.parse(Zlib::GzipReader.new(zipped_io).read).symbolize_keys[:args]
     rescue => e
+      raise e
       []
     end
   end
@@ -60,8 +61,8 @@ class QueryApplication < Sinatra::Base
     command_name        = params[:command]
     args                = params[:args] ||= []
 
-    if params[:raw] == 'true' or params[:raw]
-      args = Util.unpack_raw_args(params[:raw_args] || '')
+    if params['raw'] == 'true' or params['raw']
+      args = Util.unpack_raw_args(params['raw_args'] || '')
     end
 
 
