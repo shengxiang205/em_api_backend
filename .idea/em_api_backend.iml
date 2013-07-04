@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="activesupport (v3.2.13, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="addressable (v2.3.4, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="backports (v3.3.2, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bson (v1.9.0, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bson_ext (v1.9.0, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.3.5, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="coderay (v1.0.9, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="cookiejar (v0.3.0, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="daemons (v1.1.9, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="dalli (v2.6.4, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="database_cleaner (v1.0.1, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="em-http-request (v1.0.3, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="em-resolv-replace (v1.1.3, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="em-socksify (v0.2.1, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="em-synchrony (v1.0.3, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="eventmachine (v1.0.3, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="factory_girl (v4.2.0, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="http_parser.rb (v0.5.3, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="i18n (v0.6.1, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="json (v1.8.0, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="method_source (v0.8.1, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="minitest (v2.12.1, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mongo (v1.9.0, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="moped (v1.2.0, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.7.7, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pry (v0.9.12.2, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack (v1.5.2, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-fiber_pool (v0.9.3, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-protection (v1.5.0, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-test (v0.6.2, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake (v10.0.4, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sinatra (v1.4.3, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sinatra-contrib (v1.4.0, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sinatra-synchrony (v0.4.1, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="slop (v3.4.5, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="thin (v1.5.1, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tilt (v1.4.1, RVM: ruby-1.9.3-p286 [em_api_backend]) [gem]" level="application" />
+  </component>
+</module>
+
