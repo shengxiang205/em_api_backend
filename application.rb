@@ -33,7 +33,7 @@ module Mongo
     def read(maxlen, buffer)
       # Block on data to read for @op_timeout seconds
       current_time = Time.now
-      log_info 'start query'
+      logger.info 'start query'
       if EM.reactor_running?
         loop do
           begin
@@ -44,7 +44,7 @@ module Mongo
 
             unless ready
               EM.add_timer(0.001) do
-                log_info "resume: #{f.object_id}"
+                logger.info "resume: #{f.object_id}"
                 f.resume
               end
 
@@ -66,7 +66,7 @@ module Mongo
           raise ConnectionFailure
         end
       end
-      log_info 'end'
+      logger.info 'end'
       #begin
       #  ready = IO.select([@socket], nil, [@socket], @op_timeout)
       #  unless ready
