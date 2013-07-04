@@ -33,7 +33,7 @@ module Mongo
     def read(maxlen, buffer)
       # Block on data to read for @op_timeout seconds
       current_time = Time.now
-      logger.info 'start query'
+      puts 'start query'
       if EM.reactor_running?
         loop do
           begin
@@ -44,7 +44,7 @@ module Mongo
 
             unless ready
               EM.add_timer(0.001) do
-                logger.info "resume: #{f.object_id}"
+                puts "resume: #{f.object_id}"
                 f.resume
               end
 
@@ -66,7 +66,7 @@ module Mongo
           raise ConnectionFailure
         end
       end
-      logger.info 'end'
+      puts 'end'
       #begin
       #  ready = IO.select([@socket], nil, [@socket], @op_timeout)
       #  unless ready
@@ -95,12 +95,15 @@ case ENV["RACK_ENV"]
   when "production"
     logger       = ::Logger.new("log/production.log")
     logger.level = ::Logger::WARN
+    $stdout = File.open('log/output.log', 'a')
   when "development"
     logger       = ::Logger.new(STDOUT)
     logger.level = ::Logger::DEBUG
   else
     logger = ::Logger.new("/dev/null")
 end
+
+
 
 Cache = Dalli::Client.new(['192.168.10.249:11211'], threadsafe: true, failover: true, namespace: 'data_ocean')
 Sinatra::Synchrony.overload_tcpsocket!
